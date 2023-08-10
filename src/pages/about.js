@@ -59,11 +59,11 @@ const about = () => {
                 Hello, I am Lutfiyar, a web developer and UI/UX designer with a
                 passion for creating beautiful, functional, and user-centered
                 digital experiences. I am always looking for new and innovative
-                ways to bring my clients' visions to life.
+                ways to bring my clients visions to life.
               </p>
               <p className="my-4 font-medium">
                 I believe that design is about more than just making things look
-                pretty and it's about solving problems and creating intuitive,
+                pretty and it is about solving problems and creating intuitive,
                 enjoyable experiences for users.
               </p>
               <p className="font-medium">
