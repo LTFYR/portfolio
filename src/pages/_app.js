@@ -6,6 +6,7 @@ import { AnimatePresence } from "framer-motion";
 import { Montserrat } from "next/font/google";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import "../styles/tw.css";
 
 const montserrat = Montserrat({
   subsets: ["latin"],

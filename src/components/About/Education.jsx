@@ -7,7 +7,8 @@ const Courses = ({ type, time, location, detail }) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:my-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
+      style={{ width: "60%" }}
+      className="my-8 first:my-0 last:mb-0 mx-auto flex flex-col items-center justify-between md80"
     >
       <ProgressIcon reff={ref} />
       <motion.div
@@ -18,7 +19,7 @@ const Courses = ({ type, time, location, detail }) => {
         <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
           {type}
         </h3>
-        <span className="capitalize font-medium text-black/70 dark:text-light xs:text-sm">
+        <span className="capitalize font-medium text-light dark:text-light xs:text-sm">
           {time} | {location}
         </span>
         <p className="font-medium w-full md:text-sm">{detail}</p>
@@ -40,10 +41,10 @@ const Education = () => {
         Education
       </h2>
 
-      <div ref={ref} className="w-[75%] mx-auto lg:w-[90%] md:w-full relative">
+      <div ref={ref} className="w75 mx-auto l90 md:w-full relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-0 h-full w-[4px] md:w-[2px] md:left-[30px] xs:left-[20px] bg-black origin-top dark:bg-light"
+          className="absolute left-9 top-0 h-full w4 w2 left30 left20 bg-black origin-top dark:bg-light"
         ></motion.div>
 
         <ul className="w-full flex flex-col items-start justify-between ml-4">

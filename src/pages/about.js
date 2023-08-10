@@ -73,8 +73,8 @@ const About = () => {
                 opportunity to bring my skills and passion to your next project.
               </p>
             </div>
-            <div className="col-span-3 xl:col-span-4 md:col-span-8 md:order-1 relative h-max flex justify-center items-center rounded-[1rem] border-2 border-solid border-slate-900 dark:bg-dark dark:border-light bg-white py-8">
-              <div className="absolute top-1 -right-2 -z-10 w-[102%] h-[103%] rounded-2xl bg-slate-900 dark:bg-light" />
+            <div className="col-span-3 xl:col-span-4 md:col-span-8 md:order-1 relative h-max flex justify-center items-center br1 border-2 border-solid border-slate-900 dark:bg-dark dark:border-light bg-white py-8">
+              <div className="absolute top-1 -right-2 -z-10 w102 h103 rounded-2xl bg-slate-900 dark:bg-light" />
               <Image
                 src={profile}
                 priority

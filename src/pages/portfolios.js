@@ -14,9 +14,9 @@ import fiver from "../../public/images/projects/fiver.png";
 import udemy from "../../public/images/projects/udemy.png";
 import rentacar from "../../public/images/projects/rentacar.png";
 
-const showVideo = () => {
-  return <video width={700} height={500} controls></video>;
-};
+// const showVideo = () => {
+//   return <video width={700} height={500} controls></video>;
+// };
 
 const Technologies = ({ content, color, bgColor }) => {
   return (
@@ -34,87 +34,87 @@ const Technologies = ({ content, color, bgColor }) => {
   );
 };
 
-const BestProject = ({
-  title,
-  img,
-  total,
-  link,
-  type,
-  github,
-  technlogies,
-}) => {
-  return (
-    <article className="w-full p-12 flex lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 items-center justify-between rounded-3xl border border-solid border-gray-600 bg-dark/70 shadow-2xl dark:bg-dark dark:shadow-red-600 dark:shadow-shad dark:text-light dark:border-light">
-      <Link
-        href="#"
-        className="w-1/2 lg:w-full cursor-pointer overflow-hidden rounded-lg"
-      >
-        <Image
-          src={img}
-          alt={title}
-          className="w-full h-auto border-2 border-solid border-gray-600 rounded-2xl"
-        />
-      </Link>
-      <div className="w-1/2 h-full lg:w-full sm:w-full flex flex-col items-start justify-between pl-6  lg:pl-0 lg:pt-6">
-        <span className="text-red-600 font-medium text-xl xs:text-base">
-          {type}
-        </span>
-        <Link
-          className=" hover:text-white  hover:rounded-2xl"
-          href={link}
-          target="_blank"
-        >
-          <h2 className="my-2 text-light w-full text-3xl text-left font-bold sm:text-sm">
-            {title}
-          </h2>
-        </Link>
-        <p className="font-medium text-light my-2 dark:text-light sm:text-xs whitespace-pre-wrap">
-          {total}
-        </p>
-        <div className="flex justify-between my-3 gap-4 flex-wrap">
-          <Technologies color="white" content="Redux" bgColor="red" />
-          <Technologies color="white" content="NodeJs" bgColor="aqua" />
-          <Technologies color="white" content="ReactJs" bgColor="green" />
-          <Technologies color="red" content="Router" bgColor="yellow" />
-        </div>
-        <div className="flex items-center sm:justify-between w-full my-4">
-          <Link
-            href="https://github.com/LTFYR/socialmedia/tree/main"
-            target="_blank"
-          >
-            <GithubIcon className="text-4xl" />
-          </Link>
-          <button
-            onClick={showVideo}
-            className="ml-4 text-lg font-medium capitalize  p-2.5 px-6 rounded-lg text-white bg-[rgba(253,29,29,1)] border border-solid border-white sm:px-4 sm:text-base"
-          >
-            See Demo
-          </button>
-        </div>
-      </div>
-    </article>
-  );
-};
+// const BestProject = ({
+//   title,
+//   img,
+//   total,
+//   link,
+//   type,
+//   github,
+//   technlogies,
+// }) => {
+//   return (
+//     <article className="w-full p-12 flex lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 items-center justify-between rounded-3xl border border-solid border-gray-600 bg-dark/70 shadow-2xl dark:bg-dark dark:shadow-red-600 dark:shadow-shad dark:text-light dark:border-light">
+//       <Link
+//         href="#"
+//         className="w-1/2 lg:w-full cursor-pointer overflow-hidden rounded-lg"
+//       >
+//         <Image
+//           src={img}
+//           alt={title}
+//           className="w-full h-auto border-2 border-solid border-gray-600 rounded-2xl"
+//         />
+//       </Link>
+//       <div className="w-1/2 h-full lg:w-full sm:w-full flex flex-col items-start justify-between pl-6  lg:pl-0 lg:pt-6">
+//         <span className="text-red-600 font-medium text-xl xs:text-base">
+//           {type}
+//         </span>
+//         <Link
+//           className=" hover:text-white  hover:rounded-2xl"
+//           href={link}
+//           target="_blank"
+//         >
+//           <h2 className="my-2 text-light w-full text-3xl text-left font-bold sm:text-sm">
+//             {title}
+//           </h2>
+//         </Link>
+//         <p className="font-medium text-light my-2 dark:text-light sm:text-xs whitespace-pre-wrap">
+//           {total}
+//         </p>
+//         <div className="flex justify-between my-3 gap-4 flex-wrap">
+//           <Technologies color="white" content="Redux" bgColor="red" />
+//           <Technologies color="white" content="NodeJs" bgColor="aqua" />
+//           <Technologies color="white" content="ReactJs" bgColor="green" />
+//           <Technologies color="red" content="Router" bgColor="yellow" />
+//         </div>
+//         <div className="flex items-center sm:justify-between w-full my-4">
+//           <Link
+//             href="https://github.com/LTFYR/socialmedia/tree/main"
+//             target="_blank"
+//           >
+//             <GithubIcon className="text-4xl" />
+//           </Link>
+//           <button
+//             onClick={showVideo}
+//             className="ml-4 text-lg font-medium capitalize  p-2.5 px-6 rounded-lg text-white bg-[rgba(253,29,29,1)] border border-solid border-white sm:px-4 sm:text-base"
+//           >
+//             See Demo
+//           </button>
+//         </div>
+//       </div>
+//     </article>
+//   );
+// };
 
-const Project = ({ img, title, link, github }) => {
-  return (
-    <article className="group relative overflow-auto w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-gray-600 bg-white p-6 cursor-pointer">
-      <div className="hidden group-hover:block absolute inset-0 group-hover:bg-black/70 text-center">
-        <h2>{title}</h2>
-        <div className="flex items-center">
-          <Link href={link}>See Project</Link>
-          <Link href={link}>
-            <GithubIcon className="text-4xl" />
-          </Link>
-        </div>
-      </div>
-      <Image
-        src={img}
-        className=" w-full h-auto border-2 border-solid border-gray-600 rounded-2xl"
-      />
-    </article>
-  );
-};
+// const Project = ({ img, title, link, github }) => {
+//   return (
+//     <article className="group relative overflow-auto w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-gray-600 bg-white p-6 cursor-pointer">
+//       <div className="hidden group-hover:block absolute inset-0 group-hover:bg-black/70 text-center">
+//         <h2>{title}</h2>
+//         <div className="flex items-center">
+//           <Link href={link}>See Project</Link>
+//           <Link href={link}>
+//             <GithubIcon className="text-4xl" />
+//           </Link>
+//         </div>
+//       </div>
+//       <Image
+//         src={img}
+//         className=" w-full h-auto border-2 border-solid border-gray-600 rounded-2xl"
+//       />
+//     </article>
+//   );
+// };
 
 const Projects = ({ title, img, total, link, type, github }) => {
   return (
@@ -205,7 +205,7 @@ const MyProjects = () => {
                     follow,search,like,dislike,unfollow,suggestded
                     users,posts,save post,explore section and etc on this app
                   </p>
-                  <div className="flex justify-between my-3 gap-4 flex-wrap">
+                  <div className="flex justify-between my-3 gap-4 sm:gap-2 flex-wrap">
                     <Technologies color="white" content="Redux" bgColor="red" />
                     <Technologies
                       color="white"
@@ -237,7 +237,7 @@ const MyProjects = () => {
                     </Link>
                     <button
                       onClick={showVideo}
-                      className="ml-4 text-lg font-medium capitalize  p-2.5 px-6 rounded-lg text-white bg-[rgba(253,29,29,1)] border border-solid border-white sm:px-4 sm:text-base"
+                      className="ml-4 text-lg font-medium capitalize  p-2.5 px-6 rounded-lg text-white bgred border border-solid border-white sm:px-4 sm:text-base"
                     >
                       See Demo
                     </button>
@@ -305,7 +305,7 @@ const MyProjects = () => {
                     without NextAuth. Reserving properties is fully functional
                     and etc..
                   </p>
-                  <div className="flex justify-between my-3 gap-4 sm:gap-0 flex-wrap">
+                  <div className="flex justify-between my-3 gap-4 sm:gap-2 flex-wrap">
                     <Technologies
                       color="white"
                       content="Fullstack"
@@ -347,7 +347,7 @@ const MyProjects = () => {
                     <Link
                       href="https://airbnbclone-ltfyr.vercel.app/"
                       target="_blank"
-                      className="ml-4 text-lg font-medium capitalize  p-2.5 px-6 rounded-lg text-white bg-[rgba(253,29,29,1)] border border-solid border-white sm:px-4 sm:text-base"
+                      className="ml-4 text-lg font-medium capitalize  p-2.5 px-6 rounded-lg text-white bgred border border-solid border-white sm:px-4 sm:text-base"
                     >
                       See Project
                     </Link>

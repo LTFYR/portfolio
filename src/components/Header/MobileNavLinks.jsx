@@ -18,7 +18,7 @@ export const MobileNavLinks = ({ href, title, className = "", toggle }) => {
       {title}
 
       <span
-        className={`h-[1px] inline-block bg-black absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
+        className={`h1 inline-block bg-black absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
           url.asPath === href ? "w-full bg-red-600" : "w-0 bg-red-600"
         } dark:bg-light `}
       >
