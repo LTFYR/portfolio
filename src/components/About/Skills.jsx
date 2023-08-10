@@ -24,10 +24,10 @@ const Skills = () => {
         My skills
       </h2>
       <div
-        className="w-full h-screen relative flex items-center justify-center rounded-full bg-circle dark:bg-circleDark h80 h60 h50 
-      lg:bg-circleLightLg lg:dark:bg-circleDarkLg
-      md:bg-circleLightMd md:dark:bg-circleDarkMd
-      sm:bg-circleLightSm sm:dark:bg-circleDarkSm
+        className="w-full h-screen relative flex items-center justify-center rounded-full circle  h80 h60 h50 
+      lg:circleLightLg
+      md:circleLightMd
+      sm:circleLightSm
       "
       >
         <motion.div

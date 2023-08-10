@@ -148,3 +148,78 @@
 .w4 {
   width: 4px;
 }
+
+.banner-bg {
+  background-image: url(/images/bgnew.jpg);
+}
+
+.circle {
+  background-image: repeating-radial-gradient(
+    rgba(0, 0, 0, 0.4) 2px,
+    #0d0e58 5px,
+    #f5f5f5 100px
+  );
+}
+
+.circleDark {
+  background-image: repeating-radial-gradient(
+    rgba(255, 255, 255, 0.4) 2px,
+    #1b1b1b 5px,
+    #1b1b1b 100px
+  );
+}
+
+.circleLightLg {
+  background-image: repeating-radial-gradient(
+    rgba(0, 0, 0, 0.4) 2px,
+    #f5f5f5 5px,
+    #f5f5f5 80px
+  );
+}
+
+.circleDarkLg {
+  background-image: repeating-radial-gradient(
+    rgba(255, 255, 255, 0.5) 2px,
+    #1b1b1b 8px,
+    #1b1b1b 80px
+  );
+}
+
+.circleLightMd {
+  background-image: repeating-radial-gradient(
+    rgba(0, 0, 0, 0.4) 2px,
+    #f5f5f5 5px,
+    #f5f5f5 60px
+  );
+}
+.circleDarkMd {
+  background-image: repeating-radial-gradient(
+    rgba(255, 255, 255, 0.5) 2px,
+    #1b1b1b 8px,
+    #1b1b1b 60px
+  );
+}
+.circleLightSm {
+  background-image: repeating-radial-gradient(
+    rgba(0, 0, 0, 0.4) 2px,
+    #f5f5f5 5px,
+    #f5f5f5 40px
+  );
+}
+.circleDarkSm {
+  background-image: repeating-radial-gradient(
+    rgba(255, 255, 255, 0.5) 2px,
+    #1b1b1b 4px,
+    #1b1b1b 40px
+  );
+}
+
+.shad {
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.spin-custom {
+  animation: spin 6s linear infinite;
+}

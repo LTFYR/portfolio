@@ -248,9 +248,9 @@ const MyProjects = () => {
             <div className="col-span-6 sm:col-span-12">
               <Projects
                 title="E-Shop"
-                link="/"
+                link="https://eshop-ltfyr.vercel.app/"
                 img={ecomercefilter}
-                github="/"
+                github="https://github.com/LTFYR/eshop"
                 type="New"
               />
             </div>
