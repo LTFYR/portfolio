@@ -236,7 +236,7 @@ const MyProjects = () => {
                       <GithubIcon className="text-4xl" />
                     </Link>
                     <button
-                      onClick={showVideo}
+                      onClick={() => {}}
                       className="ml-4 text-lg font-medium capitalize  p-2.5 px-6 rounded-lg text-white bgred border border-solid border-white sm:px-4 sm:text-base"
                     >
                       See Demo
