@@ -65,7 +65,7 @@ const AllNews = ({ time, img, link, title }) => {
   );
 };
 
-const News = ({ title, time, img, link, by }) => {
+const NewsComponent = ({ title, time, img, link, by }) => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
@@ -125,7 +125,7 @@ const News = ({ title, time, img, link, by }) => {
   );
 };
 
-const news = () => {
+const News = () => {
   const variants = {
     hidden: { opacity: 0 },
     show: {
@@ -156,21 +156,21 @@ const news = () => {
             animate="show"
             className="grid grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 gap-16"
           >
-            <News
+            <NewsComponent
               title="Developers watch out for these burnout symptoms"
               img={article}
               by="Lutfiyar Aliyev"
               time=" 20 MARCH 2023"
               link="/"
             />
-            <News
+            <NewsComponent
               title="How to be appreciated for your hard work as a developer"
               img={article2}
               by="Orkhan Samedov"
               time="13 MARCH 2022"
               link="/"
             />
-            <News
+            <NewsComponent
               title="How designers and developers can make it better"
               img={article3}
               by="Efe Güngör"
@@ -231,4 +231,4 @@ const news = () => {
   );
 };
 
-export default news;
+export default News;
