@@ -134,7 +134,7 @@ const Projects = ({ title, img, total, link, type, github }) => {
         <div className="flex justify-between items-center w-full">
           <span className="text-red-600 font-medium lg:text-sm">{type}</span>
           <Link className="" href={link} target="_blank">
-            <h2 className="my-2 w-full text-2xl text-left font-bold lg:font-normal lg:text-sm">
+            <h2 className="my-2 w-full text-xl text-left font-bold lg:font-normal lg:text-sm">
               {title}
             </h2>
           </Link>
@@ -299,11 +299,8 @@ const MyProjects = () => {
                   <p className="font-medium text-light my-2 sm:text-xs whitespace-pre-wrap">
                     Airbnb clone App made using NextJs,Prisma and most of latest
                     technlogoies. Users can reserv properties. User can add to
-                    favorites properties. They can create new property. They can
-                    delete, modify their properties. User can register with
-                    github,google with NextAuth features. Also user can register
-                    without NextAuth. Reserving properties is fully functional
-                    and etc..
+                    favorites properties. Also user can register without
+                    NextAuth. Reserving properties is fully functional and etc..
                   </p>
                   <div className="flex justify-between my-3 gap-4 sm:gap-2 flex-wrap">
                     <Technologies
@@ -326,11 +323,11 @@ const MyProjects = () => {
                       content="MongoDB"
                       bgColor="green"
                     />
-                    <Technologies
+                    {/* <Technologies
                       color="white"
                       content="NextAuth"
                       bgColor="goldenrod"
-                    />
+                    /> */}
                     <Technologies
                       color="red"
                       content="Prisma"
