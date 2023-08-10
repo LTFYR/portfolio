@@ -66,7 +66,7 @@ export default function Home() {
                 <Motion
                   href="mailto:lutfiyar888lutfiyar@gmail.com"
                   target={"_blank"}
-                  className="ml-4 text-lg font-medium capitalize  p-2.5 px-6 md:p-2 md:px-4 md:text-base rounded-lg text-white bg-[rgba(253,29,29,1)] border border-solid border-white"
+                  className="ml-4 text-lg font-medium capitalize  p-2.5 px-6 md:p-2 md:px-4 md:text-base rounded-lg text-white bgred border border-solid border-white"
                   whileHover={{
                     backgroundColor: [
                       "rgba(253,29,29,1)",

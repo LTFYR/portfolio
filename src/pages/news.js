@@ -111,7 +111,7 @@ const NewsComponent = ({ title, time, img, link, by }) => {
         <Image
           src={img}
           alt={title}
-          className="w-full h-auto border-2 border-solid border-gray-600 rounded-2xl hover:scale-[1.1] hover:rotate-3 hover:border-solid hover:border-gray-600 hover:rounded-2xl hover:border-2"
+          className="w-full h-auto border-2 border-solid border-gray-600 rounded-2xl hover:rotate-3 hover:border-solid hover:border-gray-600 hover:rounded-2xl hover:border-2"
         />
       </Link>
       <Link href={link} target="_blank">

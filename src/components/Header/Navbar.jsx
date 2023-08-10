@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <header
       id="nav"
-      className={`w-full px-32 py-8 font-medium flex relative items-center justify-between border border-l-0 border-r-0 border-solid border-b-gray-400 shadow-[rgba(0, 0, 0, 0.35) 0px 5px 15px] dark:border-t-0 dark:border-l-0 dark:border-r-0 text-white lg:px-16 md:px-12 sm:px-8 ${
+      className={`w-full px-32 py-8 font-medium flex relative items-center justify-between border border-l-0 border-r-0 border-solid border-b-gray-400 shadow dark:border-t-0 dark:border-l-0 dark:border-r-0 text-white lg:px-16 md:px-12 sm:px-8 ${
         sticky
           ? "!fixed bg-black/70 z-10 top-0 left-0 transition 2s ease-in-out "
           : ""
@@ -143,7 +143,7 @@ const Navbar = () => {
         <motion.div
           initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
           animate={{ scale: 1, opacity: 1, transition: "300ms" }}
-          className="min-w-[90vw] min-h-[80vh] flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-red-600/70 rounded-2xl backdrop-blur-md py-36 dark:bg-white/70 dark:text-black"
+          className="mw90 mh80 flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-red-600/70 rounded-2xl backdrop-blur-md py-36 dark:bg-white/70 dark:text-black"
         >
           <nav className="flex items-center flex-col justify-center">
             <MobileNavLinks
@@ -240,7 +240,7 @@ const Navbar = () => {
         </motion.div>
       ) : null}
 
-      <div className="absolute left-[50%] sm:left-[85%] top-2 sm:top-3 translate-x-[-50%]">
+      <div className="absolute left50 smleft85  top-2 sm:top-3 tx50">
         <Logo />
       </div>
     </header>
