@@ -81,13 +81,13 @@ const Contact = () => {
                   <input
                     onChange={(e) => setUsername(e.target.value)}
                     placeholder="Add your name"
-                    className="w-1/2 sm:w-full py-2 px-4 text-base border border-solid border-yellow-500 rounded-2xl text-black placeholder:text-gray-600 font-bold placeholder:font-normal outline-none border-2 focus-within:border-yellow-500 duration-200"
+                    className="w-1/2 sm:w-full py-2 px-4 text-base border border-solid border-yellow-500 rounded-2xl text-black placeholder:text-gray-600 font-bold placeholder:font-normal outline-none  focus-within:border-yellow-500 duration-200"
                     type="text"
                   />
                   <input
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Add your email"
-                    className="w-1/2 sm:w-full py-2 px-4 text-base border border-solid border-yellow-500 rounded-2xl text-black placeholder:text-gray-600 font-bold placeholder:font-normal outline-none border-2 focus-within:border-yellow-500 duration-200"
+                    className="w-1/2 sm:w-full py-2 px-4 text-base border border-solid border-yellow-500 rounded-2xl text-black placeholder:text-gray-600 font-bold placeholder:font-normal outline-none  focus-within:border-yellow-500 duration-200"
                     type="email"
                   />
                 </div>
@@ -95,7 +95,7 @@ const Contact = () => {
                   <textarea
                     onChange={(e) => setMessage(e.target.value)}
                     placeholder="Your message"
-                    className="w-full text-base border border-solid border-yellow-500 rounded-2xl h-36 p-4 text-black placeholder:text-gray-600 font-bold placeholder:font-normal outline-none border-2 focus-within:border-yellow-500 duration-200 resize-none"
+                    className="w-full text-base border border-solid border-yellow-500 rounded-2xl h-36 p-4 text-black placeholder:text-gray-600 font-bold placeholder:font-normal outline-none  focus-within:border-yellow-500 duration-200 resize-none"
                   ></textarea>
                   {errorMsg && (
                     <p className="w-full text-center text-base tracking-wider bg-red-500">
