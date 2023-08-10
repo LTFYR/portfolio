@@ -7,6 +7,7 @@ import { Montserrat } from "next/font/google";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import "../styles/tw.css";
+import "../styles/globals.css";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
