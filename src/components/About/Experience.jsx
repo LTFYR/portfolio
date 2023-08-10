@@ -15,7 +15,7 @@ const Experiences = ({ pos, company, links, time, location, job }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.6, type: "spring" }}
       >
-        <h3 className="capitalize font-bold text-2xl dark:text-light sm:text-xl xs:text-lg">
+        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
           {pos}&nbsp;
           <a href={links} target={"_blank"} className="text-red-600 capitalize">
             @{company}
@@ -46,7 +46,7 @@ const Experience = () => {
       <div ref={ref} className="w75 mx-auto w90 md:w-full relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-0 h-full w4 bg-black origin-top dark:bg-light w2 left30 left20"
+          className="absolute left-9 top-0 h-full w4 bg-black origin-top w2 left30 left20"
         ></motion.div>
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">

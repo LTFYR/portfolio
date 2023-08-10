@@ -32,7 +32,7 @@ export const Text = ({ text, className = "" }) => {
   return (
     <div className="w-full mx-auto flex items-center justify-center py-2 text-center">
       <motion.h1
-        className={`inline-block w-full text-light font-bold capitalize text-6xl dark:text-light ${className}`}
+        className={`inline-block w-full text-light font-bold capitalize text-6xl ${className}`}
         variants={textMotion}
         initial="initial"
         animate="animation"

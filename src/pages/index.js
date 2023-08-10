@@ -28,11 +28,11 @@ export default function Home() {
       <PageTransition />
       <main className="flex items-center text-black w-full min-h-screen lg:pb-0">
         <Layout className="!pt-0 md:pt-16 sm:pt-8 sm:px-0 lg:!pb-4">
-          <div className="w-full flex text-light lg:flex-col dark:text-light gap-4 items-center justify-between sm:pt-8">
+          <div className="w-full flex text-light lg:flex-col gap-4 items-center justify-between sm:pt-8">
             <div className="w-1/2 sm:flex sm:justify-center sm:items-center  sm:w-full">
               <Image
                 src={profile}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 priority
                 alt="codephoto"
                 className="w-full h-auto lg:w-9/12 lg:h-1/2 md:inline-block sm:inline-block"
@@ -55,11 +55,7 @@ export default function Home() {
                   href="/Cv2.pdf"
                   target={"_blank"}
                   download={true}
-                  className={`flex items-center bg-black text-white p-2.5 px-6 md:p-2 md:px-4 md:text-base rounded-lg text-lg font-semibold hover:bg-white hover:text-black border border-solid border-transparent hover:border-black ${
-                    theme === "light"
-                      ? "bg-white text-dark"
-                      : "bg-dark text-white border border-solid border-white"
-                  }`}
+                  className="flex items-center bg-black text-white p-2.5 px-6 md:p-2 md:px-4 md:text-base rounded-lg text-lg font-semibold hover:bg-white hover:text-black border border-solid border-transparent hover:border-black "
                 >
                   Resume
                 </Link>

@@ -44,7 +44,7 @@ const About = () => {
       </Head>
       <PageTransition />
 
-      <main className="flex w-full flex-col justify-center items-center dark:text-white">
+      <main className="flex w-full flex-col justify-center items-center">
         <Layout className="pt-8 xl:px-4">
           <Text
             text="Passion Makes the Goal!"
@@ -52,7 +52,7 @@ const About = () => {
           />
           <div className="w-full grid grid-cols-8 gap-16 sm:gap-8">
             <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:col-span-8 md:order-2">
-              <h2 className="mb-4 text-lg uppercase font-bold text-white dark:text-white sm:w-full sm:text-center">
+              <h2 className="mb-4 text-lg uppercase font-bold text-white sm:w-full sm:text-center">
                 About me
               </h2>
               <p className="font-medium">
@@ -73,12 +73,12 @@ const About = () => {
                 opportunity to bring my skills and passion to your next project.
               </p>
             </div>
-            <div className="col-span-3 xl:col-span-4 md:col-span-8 md:order-1 relative h-max flex justify-center items-center br1 border-2 border-solid border-slate-900 dark:bg-dark dark:border-light bg-white py-8">
-              <div className="absolute top-1 -right-2 -z-10 w102 h103 rounded-2xl bg-slate-900 dark:bg-light" />
+            <div className="col-span-3 xl:col-span-4 md:col-span-8 md:order-1 relative h-max flex justify-center items-center br1 border-2 border-solid border-slate-900 bg-white py-8">
+              <div className="absolute top-1 -right-2 -z-10 w102 h103 rounded-2xl bg-slate-900" />
               <Image
                 src={profile}
                 priority
-                sizes="(max-width : 768px) 100vw,(max-width:1200px) 50vw, 33vw"
+                // sizes="(max-width : 768px) 100vw,(max-width:1200px) 50vw, 33vw"
                 alt="portfolio picture"
                 className="w-full h-auto"
               />
@@ -88,7 +88,7 @@ const About = () => {
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <Numbers val={15} />+
                 </span>
-                <h2 className="text-xl dark:text-white font-medium capitalize text-white xl:text-center md:text-lg sm:text-base xs:text-sm">
+                <h2 className="text-xl font-medium capitalize text-white xl:text-center md:text-lg sm:text-base xs:text-sm">
                   Projects completed
                 </h2>
               </div>
@@ -96,7 +96,7 @@ const About = () => {
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <Numbers val={15} />+
                 </span>
-                <h2 className="text-xl dark:text-white font-medium capitalize text-white xl:text-center md:text-lg sm:text-base xs:text-sm">
+                <h2 className="text-xl font-medium capitalize text-white xl:text-center md:text-lg sm:text-base xs:text-sm">
                   Projects completed
                 </h2>
               </div>
@@ -104,7 +104,7 @@ const About = () => {
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <Numbers val={15} />+
                 </span>
-                <h2 className="text-xl dark:text-white font-medium capitalize text-white xl:text-center md:text-lg sm:text-base xs:text-sm">
+                <h2 className="text-xl font-medium capitalize text-white xl:text-center md:text-lg sm:text-base xs:text-sm">
                   Projects completed
                 </h2>
               </div>

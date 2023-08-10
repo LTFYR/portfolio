@@ -81,6 +81,50 @@
   }
 }
 
+.ham11 {
+  transform: rotate(45deg);
+  transform: translateY(0.25rem);
+}
+.ham12 {
+  transform: translateY(-0.125rem);
+}
+
+.ham21 {
+  opacity: 0;
+}
+
+.ham22 {
+  opacity: 1;
+}
+
+.mynav1 {
+  width: 100%;
+  background-color: rgb(220 38 38);
+}
+
+.mynav2 {
+  width: 0px;
+  background-color: rgb(220 38 38);
+}
+
+.ham31 {
+  transform: rotate(-45deg);
+  transform: translateY(-0.25rem);
+}
+
+.ham32 {
+  transform: translateY(0.125rem);
+}
+
+.fxed {
+  position: fixed !important;
+  z-index: 10;
+  background-color: rgb(0 0 0 / 0.7);
+  top: 0px;
+  left: 0px;
+  transition: 2s ease-in-out;
+}
+
 .tx50 {
   transform: translateX(-50%);
 }

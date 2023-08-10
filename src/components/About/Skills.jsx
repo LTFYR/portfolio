@@ -4,8 +4,8 @@ import React from "react";
 const MySkills = ({ n, x, y }) => {
   return (
     <motion.div
-      className="flex items-center justify-center rounded-full bg-black text-white font-semibold absolute cursor-pointer py-3 px-6 shadow-black hover:bg-red-600 dark:bg-white dark:text-dark dark:border-dark
-      lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 xs:bg-transparent xs:dark:bg-transparent xs:text-dark xs:dark:text-white xs:font-bold
+      className="flex items-center justify-center rounded-full bg-black text-white font-semibold absolute cursor-pointer py-3 px-6 shadow-black hover:bg-red-600
+      lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 xs:bg-transparent xs:dark:bg-transparent xs:text-dark xs:font-bold
       "
       whileHover={{ scale: 1.06 }}
       initial={{ x: 0, y: 0 }}
@@ -31,7 +31,7 @@ const Skills = () => {
       "
       >
         <motion.div
-          className="flex items-center justify-center rounded-full bg-black text-white font-semibold cursor-pointer p-8 shadow-black hover:bg-orange-400 hover:font-extrabold dark:bg-white dark:text-dark dark:border-dark xs:bg-transparent lg:py-6 md:p-4 xs:text-xs xs:p-2 xs:dark:bg-black xs:text-white xs:dark:text-white xs:font-bold"
+          className="flex items-center justify-center rounded-full bg-black text-white font-semibold cursor-pointer p-8 shadow-black hover:bg-orange-400 hover:font-extrabold xs:bg-transparent lg:py-6 md:p-4 xs:text-xs xs:p-2 xs:dark:bg-black xs:text-white xs:dark:text-white xs:font-bold"
           whileHover={{ scale: 1.06 }}
         >
           Web

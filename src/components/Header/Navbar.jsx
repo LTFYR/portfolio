@@ -42,10 +42,8 @@ const Navbar = () => {
   return (
     <header
       id="nav"
-      className={`w-full px-32 py-8 font-medium flex relative items-center justify-between border border-l-0 border-r-0 border-solid border-b-gray-400 shadow dark:border-t-0 dark:border-l-0 dark:border-r-0 text-white lg:px-16 md:px-12 sm:px-8 ${
-        sticky
-          ? "!fixed bg-black/70 z-10 top-0 left-0 transition 2s ease-in-out "
-          : ""
+      className={`w-full px-32 py-8 font-medium flex relative items-center justify-between border border-l-0 border-r-0 border-solid border-b-gray-400 shadow text-white lg:px-16 md:px-12 sm:px-8 ${
+        sticky ? "fxed" : ""
       }`}
     >
       <button
@@ -53,18 +51,18 @@ const Navbar = () => {
         onClick={handleNavbar}
       >
         <span
-          className={`bg-light dark:bg-light transition-all duration-500 ease-out block h-0.5 w-6 rounded-sm  ${
-            open ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+          className={`bg-light transition-all duration-500 ease-out block h-0.5 w-6 rounded-sm  ${
+            open ? "ham11" : "ham12"
           }`}
         ></span>
         <span
-          className={`bg-light dark:bg-light transition-all duration-500 ease-out block h-0.5 w-6 rounded-sm my-0.5 ${
-            open ? "opacity-0" : "opacity-100"
+          className={`bg-light transition-all duration-500 ease-out block h-0.5 w-6 rounded-sm my-0.5 ${
+            open ? "ham21" : "ham22"
           }`}
         ></span>
         <span
-          className={`bg-light dark:bg-light transition-all duration-500 ease-out block h-0.5 w-6 rounded-sm ${
-            open ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
+          className={`bg-light transition-all duration-500 ease-out block h-0.5 w-6 rounded-sm ${
+            open ? "ham31" : "ham32"
           }`}
         ></span>
       </button>
@@ -143,30 +141,18 @@ const Navbar = () => {
         <motion.div
           initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
           animate={{ scale: 1, opacity: 1, transition: "300ms" }}
-          className="mw90 mh80 flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-red-600/70 rounded-2xl backdrop-blur-md py-36 dark:bg-white/70 dark:text-black"
+          className="mw90 mh80 flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-red-600/70 rounded-2xl backdrop-blur-md py-36"
         >
           <nav className="flex items-center flex-col justify-center">
-            <MobileNavLinks
-              href="/"
-              className=""
-              title="Home"
-              toggle={handleNavbar}
-            />
-            <MobileNavLinks
-              href="/about"
-              className=""
-              title="About"
-              toggle={handleNavbar}
-            />
+            <MobileNavLinks href="/" title="Home" toggle={handleNavbar} />
+            <MobileNavLinks href="/about" title="About" toggle={handleNavbar} />
             <MobileNavLinks
               href="/portfolios"
-              className=""
               title="Portfolios"
               toggle={handleNavbar}
             />
             <MobileNavLinks
               href="/news"
-              className=""
               title="Articles"
               toggle={handleNavbar}
             />

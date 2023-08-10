@@ -7,8 +7,7 @@ const Courses = ({ type, time, location, detail }) => {
   return (
     <li
       ref={ref}
-      style={{ width: "60%" }}
-      className="my-8 first:my-0 last:mb-0 mx-auto flex flex-col items-center justify-between md80"
+      className="w60 my-8 first:my-0 last:mb-0 mx-auto flex flex-col items-center justify-between md80"
     >
       <ProgressIcon reff={ref} />
       <motion.div
@@ -19,7 +18,7 @@ const Courses = ({ type, time, location, detail }) => {
         <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
           {type}
         </h3>
-        <span className="capitalize font-medium text-light dark:text-light xs:text-sm">
+        <span className="capitalize font-medium text-light xs:text-sm">
           {time} | {location}
         </span>
         <p className="font-medium w-full md:text-sm">{detail}</p>
@@ -44,7 +43,7 @@ const Education = () => {
       <div ref={ref} className="w75 mx-auto l90 md:w-full relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-0 h-full w4 w2 left30 left20 bg-black origin-top dark:bg-light"
+          className="absolute left-9 top-0 h-full w4 w2 left30 left20 bg-black origin-top"
         ></motion.div>
 
         <ul className="w-full flex flex-col items-start justify-between ml-4">

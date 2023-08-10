@@ -8,7 +8,7 @@ const ProgressIcon = ({ reff }) => {
   });
 
   return (
-    <figure className="absolute left-0 stroke-black dark:stroke-light">
+    <figure className="absolute left-0 stroke-black">
       <svg
         className="-rotate-90 mdw60 mdh60 xsw40 xsh40"
         width="75"
@@ -25,7 +25,7 @@ const ProgressIcon = ({ reff }) => {
           cx="75"
           cy="50"
           r="20"
-          className="sw5 !fill-white dark:fill-dark"
+          className="sw5 !fill-white"
           style={{ pathLength: scrollYProgress }}
         />
         <circle

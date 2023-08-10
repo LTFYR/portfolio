@@ -10,8 +10,8 @@ export const MyNavLinks = ({ href, title, className = "" }) => {
 
       <span
         className={`h1 inline-block bg-black absolute left-0 -bottom-0.5 group-hover:w-full ease duration-300 ${
-          url.asPath === href ? "w-full bg-red-600" : "w-0 bg-red-600"
-        } dark:bg-light `}
+          url.asPath === href ? "mynav1" : "mynav2"
+        } `}
       >
         &nbsp;
       </span>

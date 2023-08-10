@@ -118,7 +118,7 @@ const Technologies = ({ content, color, bgColor }) => {
 
 const Projects = ({ title, img, total, link, type, github }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-gray-600 bg-white p-6 relative dark:bg-dark dark:shadow-red-600 dark:shadow-shad text-black  dark:text-light dark:border-light">
+    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-gray-600 bg-white p-6 relative text-black ">
       <Link
         href={link}
         target="_blank"
@@ -175,7 +175,7 @@ const MyProjects = () => {
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
-              <article className="w-full p-12 flex lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 items-center justify-between rounded-3xl border border-solid border-gray-600 bg-dark/70 shadow-2xl dark:bg-dark dark:shadow-red-600 dark:shadow-shad dark:text-light dark:border-light">
+              <article className="w-full p-12 flex lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 items-center justify-between rounded-3xl border border-solid border-gray-600 bg-dark/70 shadow-2xl">
                 <Link
                   href="#"
                   className="w-1/2 lg:w-full cursor-pointer overflow-hidden rounded-lg"
@@ -199,7 +199,7 @@ const MyProjects = () => {
                       Instagram clone (MERN)
                     </h2>
                   </Link>
-                  <p className="font-medium text-light my-2 dark:text-light sm:text-xs whitespace-pre-wrap">
+                  <p className="font-medium text-light my-2 sm:text-xs whitespace-pre-wrap">
                     Instagram clone App made using ReactJs,NodeJS,Redux,React
                     Router. You can see most of things like
                     follow,search,like,dislike,unfollow,suggestded
@@ -272,7 +272,7 @@ const MyProjects = () => {
                 type="Best Project"
                 total="Instagram clone App made using ReactJs,NodeJS,Redux,React Router. You can see most of things like follow,search,like,dislike,unfollow,suggestded users,posts,save post,explore section and etc on this app"
               /> */}
-              <article className="w-full p-12 flex lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 items-center justify-between rounded-3xl border border-solid border-gray-600 bg-dark/70 shadow-2xl dark:bg-dark dark:shadow-red-600 dark:shadow-shad dark:text-light dark:border-light">
+              <article className="w-full p-12 flex lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 items-center justify-between rounded-3xl border border-solid border-gray-600 bg-dark/70 shadow-2xl ">
                 <Link
                   href="#"
                   className="w-1/2 lg:w-full cursor-pointer overflow-hidden rounded-lg"
@@ -296,7 +296,7 @@ const MyProjects = () => {
                       Airbnb Clone Fullstack
                     </h2>
                   </Link>
-                  <p className="font-medium text-light my-2 dark:text-light sm:text-xs whitespace-pre-wrap">
+                  <p className="font-medium text-light my-2 sm:text-xs whitespace-pre-wrap">
                     Airbnb clone App made using NextJs,Prisma and most of latest
                     technlogoies. Users can reserv properties. User can add to
                     favorites properties. They can create new property. They can

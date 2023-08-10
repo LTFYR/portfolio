@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full border-t-2 border-solid border-black dark:border-white sm:text-base text-lg font-medium">
-      <Layout className="py-8 flex items-center lg:gap-2 justify-between dark:text-white lg:flex-col lg:py-6">
+    <footer className="w-full border-t-2 border-solid border-black sm:text-base text-lg font-medium">
+      <Layout className="py-8 flex items-center lg:gap-2 justify-between lg:flex-col lg:py-6">
         <span className="lg:text-sm w-max">
           {new Date().getFullYear()} &copy; All rights reserved
         </span>

@@ -41,7 +41,7 @@ const Contact = () => {
         id="contact"
         className="w-full bg-cover-image bg-no-repeat bg-cover bg-fixed text-black px-4 relative "
       >
-        <div className="w-full h-ful bg-opacity-80 py-20 text-light dark:text-light">
+        <div className="w-full h-ful bg-opacity-80 py-20 text-light">
           <div className="max-w-6xl h-full mx-auto flex flex-col gap-6 md:gap-12">
             {/* <h1 className="text-3xl font-thin tracking-widest uppercase text-center">
             Contact me
