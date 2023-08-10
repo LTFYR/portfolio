@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { FaPhoneAlt, FaMap, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -6,7 +7,7 @@ import PageTransition from "@/components/PageTransition";
 import Head from "next/head";
 import MyAnimatedCursor from "@/components/MyAnimatedCursor";
 
-const contact = () => {
+const Contact = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -117,4 +118,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;
