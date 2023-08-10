@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cursor {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 999;
+  background-color: black;
+}
+
+.follower-cursor {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid black;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+}
+
+/* html {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/bg.jpg") !important;
+  z-index: 99999;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
