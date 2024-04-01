@@ -3,7 +3,7 @@ import { Text } from "@/components/Text";
 import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-import profile from "../../public/images/profile/profilepicture.jpg";
+import profile from "../../public/images/profile/cvimg.jpeg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/About/Skills";
 import Experience from "@/components/About/Experience";
