@@ -52,7 +52,7 @@ export default function Home() {
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
-                  href="/Cv2.pdf"
+                  href="/MyCv.pdf"
                   target={"_blank"}
                   download={true}
                   className="flex items-center bg-black text-white p-2.5 px-6 md:p-2 md:px-4 md:text-base rounded-lg text-lg font-semibold hover:bg-white hover:text-black border border-solid border-transparent hover:border-black "
