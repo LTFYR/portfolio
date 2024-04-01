@@ -51,7 +51,7 @@ const Experience = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Experiences
-            pos="Frontend Intern"
+            pos="Frontend"
             company="Crocusoft"
             links="https://www.linkedin.com/in/lutfiyar-aliyev-b47b04268/"
             time="2023 Still"
